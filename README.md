@@ -11,10 +11,6 @@ git clone https://github.com/Chonthichar/water-potability-MachineLearning-API-Do
 ```bash
 cd water-potability-ML-API
 ```
-
-```bash
-pip install -r requirements.txt
-```
 ## Workflow
 
 ### 1. Train Machine Laerning Model

@@ -5,13 +5,14 @@ FROM python:3.12-slim
 WORKDIR /app
 
 # Copy dependency list
-COPY ../requirements.txt .
+COPY requirements.txt .
 
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy app code and model into the image
-COPY ../app/main.py model.joblib model_meta.json ./
+COPY main.py ./main.py
+COPY best_model/ ./best_model/
 
 # Expose port 8000
 EXPOSE 8000
