@@ -46,7 +46,7 @@ docker run -d -p 8001:8000 water-api
 ### 4. Call the API
 Using Swagger UI
 
-1. Open http://127.0.0.1:8001/docs
+1. Open http://127.0.0.1:8000/docs
 2. Expand the /predict endpoint 
 3. Click "Try it out" and enter sample JSON input 
 4. Execute to see the response
@@ -54,7 +54,7 @@ Using Swagger UI
 Using Postman
 
 1. Create a new POST request 
-2. URL: http://127.0.0.1:8001/predict
+2. URL: http://127.0.0.1:8000/predict
 3. Body : raw : JSON, e.g:
 
 ```bash
@@ -74,7 +74,7 @@ Using Postman
 Example curl
 
 ```bash
-curl -s -X POST http://127.0.0.1:8001/predict \
+curl -s -X POST http://127.0.0.1:8000/predict \
  -H "Content-Type: application/json" \
  -d '{"ph":7.2,"Hardness":160,"Solids":1800,"Chloramines":6.5,
       "Sulfate":220,"Conductivity":350,"Organic_carbon":6.0,
