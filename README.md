@@ -37,11 +37,6 @@ A `Dockerfile` and `requirements.txt` are provided.
 
 The API will now be available at:
 
-
-```bash
-uvicorn main:app --host 0.0.0.0 --port 8000 
-```
-
 ```bash
 docker build -t water-api .
 docker run -d -p 8000:8000 water-api
