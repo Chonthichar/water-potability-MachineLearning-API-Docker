@@ -7,8 +7,8 @@ from typing import Optional
 
 app = FastAPI(title="Water Potability API", version="1.0.0")
 
-MODEL_PATH = Path("model.joblib")
-META_PATH = Path("model_meta.json")
+MODEL_PATH = Path("../best_model/model.joblib")
+META_PATH = Path("../best_model/model_meta.json")
 
 model = joblib.load(MODEL_PATH)
 
