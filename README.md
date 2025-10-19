@@ -65,15 +65,15 @@ Using Postman
 
 ```bash
 {
-  "ph": 7.2,
-  "Hardness": 160,
-  "Solids": 1800,
-  "Chloramines": 6.5,
-  "Sulfate": 220,
-  "Conductivity": 350,
-  "Organic_carbon": 6.0,
-  "Trihalomethanes": 25,
-  "Turbidity": 2.5
+    "ph": 9.4,
+    "Hardness": 90.0,
+    "Solids": 350.0,
+    "Chloramines": 3.0,
+    "Sulfate": 200.0,
+    "Conductivity": 280.0,
+    "Organic_carbon": 3.5,
+    "Trihalomethanes": 40.0,
+    "Turbidity": 0.9
 }
 
 ```
@@ -90,8 +90,19 @@ Example Response
 
 ```bash
 {
-  "class": 1,
-  "label": "Safe (potable)",
-  "probability": 0.72
+    "class": 1,
+    "label": "Safe (potable)",
+    "probability": 0.53,
+    "features_used_in_order": [
+        "ph",
+        "Hardness",
+        "Solids",
+        "Chloramines",
+        "Sulfate",
+        "Conductivity",
+        "Organic_carbon",
+        "Trihalomethanes",
+        "Turbidity"
+    ]
 }
 ```
