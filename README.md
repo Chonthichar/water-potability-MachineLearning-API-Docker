@@ -12,7 +12,7 @@ Clean water is essential, but testing can often be slow and costly. With machine
 - Scalable: the same trained model can be used across many regions.
 
 
-## What you’ll learn
+### What you’ll learn
 
 By running this repo, we’ll see the full ML : API : Docker workflow:
 - Model training : we compare ML models, handle class imbalance, and pick the best one (Random Forest).
@@ -20,7 +20,7 @@ By running this repo, we’ll see the full ML : API : Docker workflow:
 - Containerization : we package everything with Docker to run anywhere.
 - Usage : we send JSON inputs and get instant predictions.
 
-In short: we don’t just predict water safety — we follow the same pipeline used in real-world AI projects.
+In short: we don’t just predict water safety, we follow the same pipeline used in real-world AI projects.
 
 ---
 
