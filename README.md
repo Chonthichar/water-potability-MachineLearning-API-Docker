@@ -4,6 +4,13 @@ This project predicts whether water is **safe (potable)** or **unsafe** based on
 
 ---
 
+### #0. Clone the repository
+```bash
+git clone https://github.com/<your-username>/water-potability-ML-API.git
+cd water-potability-ML-API
+```
+
+
 ## Workflow
 
 ### 1. Train Machine Laerning Model
