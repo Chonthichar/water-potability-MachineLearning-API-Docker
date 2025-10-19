@@ -6,10 +6,11 @@ This project predicts whether water is **safe (potable)** or **unsafe** based on
 
 ### #0. Clone the repository
 ```bash
-git clone https://github.com/<your-username>/water-potability-ML-API.git
+git clone https://github.com/Chonthichar/water-potability-MachineLearning-API-Docker.git
+```
+```bash
 cd water-potability-ML-API
 ```
-
 
 ## Workflow
 
@@ -36,6 +37,12 @@ Make sure you have Docker installed.
 A `Dockerfile` and `requirements.txt` are provided.
 
 The API will now be available at:
+
+
+```bash
+uvicorn main:app --host 0.0.0.0 --port 8000 
+```
+
 ```bash
 docker build -t water-api .
 docker run -d -p 8000:8000 water-api
