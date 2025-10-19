@@ -9,7 +9,7 @@ This project predicts whether water is **safe (potable)** or **unsafe** based on
 git clone https://github.com/Chonthichar/water-potability-MachineLearning-API-Docker.git
 ```
 ```bash
-cd water-potability-ML-API
+cd water-potability-MachineLearning-API-Docker
 ```
 ## Workflow
 
