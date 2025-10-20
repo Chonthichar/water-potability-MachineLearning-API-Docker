@@ -50,10 +50,15 @@ Artifacts (created under best_model/):
 
 ---
 ### 2. Run the FastAPI service (locally)
+First install the dependencies (once, after cloning):
+```bash
+pip install -r requirements.txt
+```
+
+Then start the API with Uvicorn:
 ```bash
 uvicorn main:app --reload --port 8000
 ```
-
 Open interactive docs: http://127.0.0.1:8000/docs
 
 The model is wrapped in a REST API (`main.py`) with two endpoints:
