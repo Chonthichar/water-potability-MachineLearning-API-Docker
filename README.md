@@ -143,3 +143,18 @@ Example Response
 }
 ```
 With this setup, we demonstrate how ML models can be trained, deployed, and served through APIs in a way that mirrors real-world production environments.
+
+### References and further reading: 
+
+Dataset
+
+- Kadiwal, A. (2020). Water Potability Dataset. Kaggle. https://www.kaggle.com/datasets/adityakadiwal/water-potability
+
+Machine Learning and Pipelines
+- Scikit-learn Documentation — Pipeline and ColumnTransformer: https://scikit-learn.org/stable/modules/compose.html
+- Imbalanced-learn Documentation — SMOTE for handling class imbalance: https://imbalanced-learn.org/stable/over_sampling.html#smote-adasyn
+- Google Cloud. MLOps: Continuous delivery and automation pipelines in machine learning. https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning
+
+Further Reading
+- Pedregosa et al. (2011). Scikit-learn: Machine Learning in Python. JMLR.
+- Chawla, N. V. et al. (2002). SMOTE: Synthetic Minority Over-sampling Technique. Journal of Artificial Intelligence Research.
