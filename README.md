@@ -6,17 +6,15 @@ We build and ship a full workflow to predict whether water is safe (potable) or 
 Clean water is essential, but testing can often be slow and costly. With machine learning, we can predict water safety directly from chemical properties such as pH, hardness, and turbidity.
 
 ###  Real-world impact
-- Faster decisions: instead of waiting for full lab tests, authorities can quickly screen water.
-- Cost-efficient: automated predictions can reduce testing costs.
-- Scalable: the same trained model can be used across many regions.
+- Faster decisions: quick screening before full lab confirmation
+- Cost-efficient: reduce repetitive testing cost
+- Scalable: deploy the same model anywhere
 
-
-### What we’ll learn and do from the lab
-
+### What we’ll learn and do in this lab
 By running this repo, we’ll see the full ML : API : Docker workflow:
 1) Model training : we compare ML models, handle class imbalance, and pick the best one (Random Forest).
 2) Save: persist a full pipeline (preprocess and model) with metadata.
-3) Deployment : we wrap the trained model in a FastAPI service so any app can use it.
+3) Deployment :wrap the trained artifact in a FastAPI service.
 4) Ship: containerize with Docker and call the API from any client.
 
 In short: we don’t just predict water safety, we follow the same pipeline used in real-world AI projects.
@@ -71,7 +69,7 @@ The model is wrapped in a REST API (`main.py`) with two endpoints:
 ---
 
 ### 3. Docker: build and run
-We ship a minimal image that includes the API and artifact.
+We include a minimal image that bundles the API and model artifact.
 
 A `Dockerfile` and `requirements.txt` are provided.
 
@@ -91,13 +89,13 @@ to test.
 Using Swagger UI
 
 1. Open http://127.0.0.1:8000/docs
-2. Expand the /predict endpoint 
-3. Click "Try it out" and enter sample JSON input 
+2. Expand the /predict endpoint
+3. Click "Try it out" and enter sample JSON input
 4. Execute to see the response
 
 Using Postman
 
-1. Create a new POST request 
+1. Create a new POST request
 2. URL: http://127.0.0.1:8000/predict
 3. Body : raw : JSON, e.g:
 
@@ -119,10 +117,10 @@ Example curl
 
 ```bash
 curl -s -X POST http://127.0.0.1:8000/predict \
- -H "Content-Type: application/json" \
- -d '{"ph":7.2,"Hardness":160,"Solids":1800,"Chloramines":6.5,
-      "Sulfate":220,"Conductivity":350,"Organic_carbon":6.0,
-      "Trihalomethanes":25,"Turbidity":2.5}'
+  -H "Content-Type: application/json" \
+  -d '{"ph":7.2,"Hardness":160,"Solids":1800,"Chloramines":6.5,
+       "Sulfate":220,"Conductivity":350,"Organic_carbon":6.0,
+       "Trihalomethanes":25,"Turbidity":2.5}'
 ```
 Example Response
 
@@ -144,5 +142,4 @@ Example Response
     ]
 }
 ```
-
-With this setup, we can demonstrate how data science models are trained, deployed, and served through APIs in production-like environments.
+With this setup, we demonstrate how ML models can be trained, deployed, and served through APIs in a way that mirrors real-world production environments.
