@@ -115,14 +115,6 @@ def health():
 # -------------------------------------------------
 @app.post("/predict")
 def predict(payload: WaterInput):
-    """
-    How we predict (single row):
-      1) We collect the JSON into a dict (preserve keys).
-      2) If we DON'T have a pipeline, we enforce all fields exist (no None),
-         because there's no imputer to fill gaps.
-      3) We build a one-row DataFrame in the exact training order.
-      4) We call model.predict (and model.predict_proba if available) and return JSON.
-    """
     try:
         data: Dict[str, Any] = payload.model_dump()
         if not IS_PIPELINE:
