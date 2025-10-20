@@ -1,7 +1,7 @@
 # Water Potability Prediction Train ML, API and Docker
 
 We build and ship a full workflow to predict whether water is safe (potable) or unsafe from its chemical/physical properties.
-###  why this project is matter
+###  Why this project is matter
 
 Clean water is essential, but testing can often be slow and costly. With machine learning, we can predict water safety directly from chemical properties such as pH, hardness, and turbidity.
 
@@ -48,8 +48,7 @@ Artifacts (created under best_model/):
 
 - `model_meta.json` – metadata (feature order, best params, scores)
 
-Why a pipeline? We keep preprocessing and the model together, so the API can accept inputs (even with some nulls) and predict without re-implementing preprocessing.
-
+---
 ### 2. Run the FastAPI service (locally)
 ```bash
 uvicorn main:app --reload --port 8000
@@ -75,10 +74,12 @@ The API will now be available at:
 docker build -t water-api .
 docker run -d -p 8000:8000 water-api
 ```
----
+
 
 Open http://127.0.0.1:8000/docs
 to test.
+
+---
 ### 4. Call the API
 Using Swagger UI
 
