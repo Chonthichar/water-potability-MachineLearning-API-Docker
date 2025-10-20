@@ -33,10 +33,16 @@ cd water-potability-MachineLearning-API-Docker
 
 Requirements: Python 3.10+ recommended. See requirements.txt.
 
+--- 
 ## Workflow
 
 ### 1. Train the model (and save the pipeline)
 
+
+First install the dependencies (once, after cloning):
+```bash
+pip install -r requirements.txt
+```
 
 We train multiple models (Logistic Regression, Decision Tree, Random Forest, XGBoost) using cross-validation. We handle missing values (KNN and median imputers) and balance classes with SMOTE. Then we save the entire pipeline so serving is easy.
 ```bash
@@ -50,10 +56,6 @@ Artifacts (created under best_model/):
 
 ---
 ### 2. Run the FastAPI service (locally)
-First install the dependencies (once, after cloning):
-```bash
-pip install -r requirements.txt
-```
 
 Then start the API with Uvicorn:
 ```bash
