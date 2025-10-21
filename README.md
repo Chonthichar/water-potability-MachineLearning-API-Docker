@@ -81,7 +81,7 @@ docker run -d -p 8001:8000 water-api
 ```
 
 
-Open http://127.0.0.1:8000/docs
+Open http://127.0.0.1:8001/docs
 to test.
 
 ---
