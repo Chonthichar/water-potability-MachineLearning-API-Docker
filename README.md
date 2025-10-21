@@ -77,7 +77,7 @@ The API will now be available at:
 
 ```bash
 docker build -t water-api .
-docker run -d -p 8000:8000 water-api
+docker run -d -p 8001:8000 water-api
 ```
 
 
