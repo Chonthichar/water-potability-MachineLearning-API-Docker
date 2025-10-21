@@ -2,6 +2,10 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
-*.db
-*.git
-.venv
+*.ipynb
+.env
+.git
+.gitignore
+.vscode/
+.idea/
+data/
